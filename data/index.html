@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>温湿度</title>
+  <style>
+    .flex {
+      display: flex;
+    }
+
+    .flex-1 {
+      flex: 1;
+    }
+
+    .tac {
+      text-align: center;
+    }
+
+    .justify-space-between {
+      justify-content: space-between;
+    }
+
+    .btn {
+      padding: 10px 20px;
+    }
+
+    .ml10 {
+      margin-left: 10px;
+    }
+
+    .mr10 {
+      margin-right: 10px;
+    }
+  </style>
+  <style>
+    #app {
+      padding: 20px;
+    }
+  </style>
+  <script>
+    (function flexible(window, document) {
+      var docEl = document.documentElement
+      var dpr = window.devicePixelRatio || 1
+      // adjust body font size
+      function setBodyFontSize() {
+        if (document.body) {
+          document.body.style.fontSize = (12 * dpr) + "px"
+        }
+        else {
+          document.addEventListener("DOMContentLoaded", setBodyFontSize)
+        }
+      }
+      setBodyFontSize();
+      // set 1rem = viewWidth / 10
+      function setRemUnit() {
+        var rem = docEl.clientWidth / 10
+        docEl.style.fontSize = rem + "px"
+      }
+
+      setRemUnit()
+
+      // reset rem unit on page resize
+      window.addEventListener("resize", setRemUnit)
+      window.addEventListener("pageshow", function (e) {
+        if (e.persisted) {
+          setRemUnit()
+        }
+      })
+
+      // detect 0.5px supports
+      if (dpr >= 2) {
+        var fakeBody = document.createElement("body")
+        var testElement = document.createElement("div")
+        testElement.style.border = ".5px solid transparent"
+        fakeBody.appendChild(testElement)
+        docEl.appendChild(fakeBody)
+        if (testElement.offsetHeight === 1) {
+          docEl.classList.add("hairlines")
+        }
+        docEl.removeChild(fakeBody)
+      }
+    }(window, document))
+  </script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <h1 class="tac" id="brightness" style="font-size: 3.6em; min-height: 1.5em;">
+      -
+    </h1>
+  </div>
+</body>
+<script>
+  function getInitVal () {
+    fetch("/state").then(function (res) {
+      return res.text()
+    }).then(function(v) {
+      document.getElementById("brightness").innerHTML = v
+    }).catch(function (e) {
+      alert("系统错误")
+    })
+  }
+  getInitVal()
+</script>
+
+</html>

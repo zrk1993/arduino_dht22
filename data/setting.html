@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>配置</title>
+    <style>
+      body {
+        margin: 0;
+        overflow-x: auto;
+        color: #323233;
+        font-size: 16px;
+        font-family: Open Sans, -apple-system, BlinkMacSystemFont,
+          Helvetica Neue, Helvetica, Segoe UI, Arial, Roboto, PingFang SC, miui,
+          Hiragino Sans GB, Microsoft Yahei, sans-serif;
+        background-color: #f7f8fa;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex-1 {
+        flex: 1;
+      }
+      .tac {
+        text-align: center;
+      }
+      .justify-space-between {
+        justify-content: space-between;
+      }
+      .align-items-center {
+        align-items: center;
+      }
+      .fs14 {
+        font-size: 14px;
+      }
+      .btn {
+        padding: 10px 20px;
+      }
+      .ml5 {
+        margin-left: 5px;
+      }
+      .ml10 {
+        margin-left: 10px;
+      }
+      .mr5 {
+        margin-right: 5px;
+      }
+      .mr10 {
+        margin-right: 10px;
+      }
+      .mx15 {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .mr10 {
+        margin-right: 10px;
+      }
+      .mt10 {
+        margin-top: 10px;
+      }
+      .mt15 {
+        margin-top: 15px;
+      }
+      .mt20 {
+        margin-top: 20px;
+      }
+      .mb10 {
+        margin-bottom: 10px;
+      }
+      .py15 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .bdb {
+        border-bottom: 1px solid #f5f5f5;
+      }
+    </style>
+    <style></style>
+    <style>
+      #app {
+        padding: 15px;
+      }
+      .title {
+        margin: 0;
+        padding: 8px 4px 12px;
+        color: rgba(69, 90, 100, 0.6);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+      }
+      .box {
+        border-radius: 8px;
+        background: #fff;
+      }
+      .input-item {
+        position: relative;
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+      }
+      .input-item label {
+        color: #646565;
+        font-size: 14px;
+        width: 6.5em;
+      }
+      .input-item input {
+        color: #323233;
+        flex: 1;
+        font-size: 16px;
+        outline: none;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        line-height: inherit;
+        text-align: left;
+        background-color: transparent;
+        border: none;
+        resize: none;
+        user-select: auto;
+      }
+      .input-item:last-child::after {
+        border-bottom: none;
+      }
+      .input-item::after {
+        position: absolute;
+        content: " ";
+        right: 15px;
+        left: 15px;
+        bottom: 0;
+        border-bottom: 1px solid rgb(235, 237, 240);
+        transform: scaleY(0.5);
+      }
+      .btn {
+        width: 100%;
+        display: block;
+        background: #1989fa;
+        border: 1px solid #1989fa;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="title">参数配置</div>
+      <div class="box" id="input-box">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          style="
+            margin: auto;
+            padding: 10px 0 10px;
+            background: transparent;
+            display: block;
+            shape-rendering: auto;
+            animation-play-state: running;
+            animation-delay: 0s;
+          "
+          width="40px"
+          height="40px"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="xMidYMid"
+        >
+          <g
+            transform="rotate(0 50 50)"
+            style="animation-play-state: running; animation-delay: 0s"
+          >
+            <rect
+              x="45"
+              y="17"
+              rx="5"
+              ry="11"
+              width="10"
+              height="22"
+              fill="#666666"
+              style="animation-play-state: running; animation-delay: 0s"
+            >
+              <animate
+                attributeName="opacity"
+                values="1;0"
+                keyTimes="0;1"
+                dur="1s"
+                begin="-0.875s"
+                repeatCount="indefinite"
+                style="animation-play-state: running; animation-delay: 0s"
+              />
+            </rect>
+          </g>
+          <g
+            transform="rotate(45 50 50)"
+            style="animation-play-state: running; animation-delay: 0s"
+          >
+            <rect
+              x="45"
+              y="17"
+              rx="5"
+              ry="11"
+              width="10"
+              height="22"
+              fill="#666666"
+              style="animation-play-state: running; animation-delay: 0s"
+            >
+              <animate
+                attributeName="opacity"
+                values="1;0"
+                keyTimes="0;1"
+                dur="1s"
+                begin="-0.75s"
+                repeatCount="indefinite"
+                style="animation-play-state: running; animation-delay: 0s"
+              />
+            </rect>
+          </g>
+          <g
+            transform="rotate(90 50 50)"
+            style="animation-play-state: running; animation-delay: 0s"
+          >
+            <rect
+              x="45"
+              y="17"
+              rx="5"
+              ry="11"
+              width="10"
+              height="22"
+              fill="#666666"
+              style="animation-play-state: running; animation-delay: 0s"
+            >
+              <animate
+                attributeName="opacity"
+                values="1;0"
+                keyTimes="0;1"
+                dur="1s"
+                begin="-0.625s"
+                repeatCount="indefinite"
+                style="animation-play-state: running; animation-delay: 0s"
+              />
+            </rect>
+          </g>
+          <g
+            transform="rotate(135 50 50)"
+            style="animation-play-state: running; animation-delay: 0s"
+          >
+            <rect
+              x="45"
+              y="17"
+              rx="5"
+              ry="11"
+              width="10"
+              height="22"
+              fill="#666666"
+              style="animation-play-state: running; animation-delay: 0s"
+            >
+              <animate
+                attributeName="opacity"
+                values="1;0"
+                keyTimes="0;1"
+                dur="1s"
+                begin="-0.5s"
+                repeatCount="indefinite"
+                style="animation-play-state: running; animation-delay: 0s"
+              />
+            </rect>
+          </g>
+          <g
+            transform="rotate(180 50 50)"
+            style="animation-play-state: running; animation-delay: 0s"
+          >
+            <rect
+              x="45"
+              y="17"
+              rx="5"
+              ry="11"
+              width="10"
+              height="22"
+              fill="#666666"
+              style="animation-play-state: running; animation-delay: 0s"
+            >
+              <animate
+                attributeName="opacity"
+                values="1;0"
+                keyTimes="0;1"
+                dur="1s"
+                begin="-0.375s"
+                repeatCount="indefinite"
+                style="animation-play-state: running; animation-delay: 0s"
+              />
+            </rect>
+          </g>
+          <g
+            transform="rotate(225 50 50)"
+            style="animation-play-state: running; animation-delay: 0s"
+          >
+            <rect
+              x="45"
+              y="17"
+              rx="5"
+              ry="11"
+              width="10"
+              height="22"
+              fill="#666666"
+              style="animation-play-state: running; animation-delay: 0s"
+            >
+              <animate
+                attributeName="opacity"
+                values="1;0"
+                keyTimes="0;1"
+                dur="1s"
+                begin="-0.25s"
+                repeatCount="indefinite"
+                style="animation-play-state: running; animation-delay: 0s"
+              />
+            </rect>
+          </g>
+          <g
+            transform="rotate(270 50 50)"
+            style="animation-play-state: running; animation-delay: 0s"
+          >
+            <rect
+              x="45"
+              y="17"
+              rx="5"
+              ry="11"
+              width="10"
+              height="22"
+              fill="#666666"
+              style="animation-play-state: running; animation-delay: 0s"
+            >
+              <animate
+                attributeName="opacity"
+                values="1;0"
+                keyTimes="0;1"
+                dur="1s"
+                begin="-0.125s"
+                repeatCount="indefinite"
+                style="animation-play-state: running; animation-delay: 0s"
+              />
+            </rect>
+          </g>
+          <g
+            transform="rotate(315 50 50)"
+            style="animation-play-state: running; animation-delay: 0s"
+          >
+            <rect
+              x="45"
+              y="17"
+              rx="5"
+              ry="11"
+              width="10"
+              height="22"
+              fill="#666666"
+              style="animation-play-state: running; animation-delay: 0s"
+            >
+              <animate
+                attributeName="opacity"
+                values="1;0"
+                keyTimes="0;1"
+                dur="1s"
+                begin="0s"
+                repeatCount="indefinite"
+                style="animation-play-state: running; animation-delay: 0s"
+              />
+            </rect>
+          </g>
+        </svg>
+      </div>
+      <div class="mt20">
+        <button class="btn" onclick="saveConfig()">提交</button>
+      </div>
+      <div class="mt20" id="info-box"></div>
+    </div>
+  </body>
+  <script>
+    function setConfigs(configs) {
+      const wifiBoxEL = document.getElementById("input-box");
+      let str = "";
+      configs.split("&").forEach((v) => {
+        const [name, value] = v.split("=");
+        if (name) {
+          str += `
+              <div class="input-item">
+                  <label>${name}</label>
+                  <input type="text" name="${name}" value="${value}">
+              </div>`;
+        }
+      });
+      wifiBoxEL.innerHTML = str;
+    }
+    function loadConfig() {
+      fetch("/loadConfig")
+        .then(function (res) {
+          return res.text();
+        })
+        .then(function (v) {
+          setConfigs(v);
+          loadInfo();
+        })
+        .catch(function (e) {
+          alert("系统错误");
+        });
+    }
+    function loadInfo() {
+      fetch("/info")
+        .then(function (res) {
+          return res.text();
+        })
+        .then(function (v) {
+          var html = v.split("&").filter(v => v).map(v => {
+            const [name, value] = v.split("=");
+            if (name) {
+              return `<div class="mt10">
+                <span class="mr5">${name}:</span>
+                <span>${value}</span>
+              </div>`
+            }
+          }).join("")
+          document.getElementById("info-box").innerHTML = html
+        })
+        .catch(function (e) {
+          alert("系统错误");
+        });
+    }
+    function saveConfig() {
+      const obj = {};
+      const items = document.querySelectorAll(".input-item");
+      items.forEach((v) => {
+        const ipt = v.querySelector("input");
+        obj[ipt.getAttribute("name")] = ipt.value;
+      });
+      const params = Object.keys(obj)
+        .map((k) => `${k}=${obj[k]}`)
+        .join("&");
+      fetch("/saveConfig?" + params)
+        .then(function (res) {
+          return res.text();
+        })
+        .then(function (v) {
+          var controller = new AbortController()
+          fetch("/restart", { signal: controller.signal })
+          setTimeout(() => {
+            controller.abort();
+          }, 500)
+          setTimeout(() => {
+            window.location.reload()
+          }, 2000)
+          alert(v);
+        })
+        .catch(function (e) {
+          alert("系统错误");
+        });
+    }
+    loadConfig();
+  </script>
+</html>

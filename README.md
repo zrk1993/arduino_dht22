@@ -1,2 +1,2 @@
-# arduino_dht22
-arduino esp8266 dht22 AM2302
+# wifi_plug
+esp8266 wifi pulg， 智能插座
